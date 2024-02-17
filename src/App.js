@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
+
+ async function fetchAgentDetail(){
+   const response = await fetch('https://valorant-api.com/v1/agents')
+      const data = await response.json(); 
+      if(data.data[0].displayName === 'Gekko')
+    console.log(data.data[0].description);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <React.Fragment>
+      <Navbar />
+      <h1>ValoAgent</h1>
+      <section>
+        <button onClick={fetchAgentDetail}>Fetch Agents</button>
+        </section>
+   </React.Fragment>
   );
 }
 
