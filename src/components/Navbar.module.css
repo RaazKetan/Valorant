@@ -1,0 +1,46 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5em;
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+}
+.nav-Head{
+    /* padding: 10px; */
+    display: flex;
+    /* align-items: center; */
+    margin-left: 2.4em;
+    /* margin: 2em; */
+}
+.nav-sec{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    /* align-items: center; */
+}
+.nav-sec li{
+    margin: 1.5em;
+    color: black;
+    color: white;
+    font-size: 1em;
+}
+.btnPlay{
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #ff4654;
+    color: white;
+    border: none;
+    height: 3em;
+    width: 10%;
+    border-radius: 50px;
+    margin-right: 2.4em;
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Card from './components/Card';
 import './App.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   return (
    <React.Fragment>
       <Navbar />
-      <h1>ValoAgent</h1>
+      <Card/>
       <section>
         <button onClick={fetchAgentDetail}>Fetch Agents</button>
         </section>

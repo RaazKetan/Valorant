@@ -1,0 +1,27 @@
+.sec{
+    /* height: 100vh; */
+    margin: 1em 3em;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head{
+    margin-top: 0.4em;
+    align-items:center;
+    background: linear-gradient(90deg, #DF427A, #FD4860);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 8em;
+}
+.sec-2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-top: 2em;
+    font-size: 0.8em;
+    width: 100%;
+    position: relative;
+}
