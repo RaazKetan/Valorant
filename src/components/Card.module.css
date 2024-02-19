@@ -1,27 +1,58 @@
 .sec{
-    /* height: 100vh; */
-    margin: 1em 3em;
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.omen{
+    width: 40%;
+    position: absolute;
+}
+
 .head{
+    font-family: 'Valo';
     margin-top: 0.4em;
-    align-items:center;
     background: linear-gradient(90deg, #DF427A, #FD4860);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 8em;
+    font-weight: 100;
 }
 .sec-2{
     color: white;
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
     margin-top: 2em;
     font-size: 0.8em;
     width: 100%;
     position: relative;
+}
+.sec-2>p:nth-child(1){
+    text-align: justify;
+    margin: 2em;
+    letter-spacing: 0.3px;
+    font-size: 1.2em;
+    font-weight: 200;
+    width: 40%;
+}
+.sec-2>p:nth-child(2){
+    position: absolute;
+    right: 10em;
+    text-align: justify;
+    /* margin: 2em; */
+    /* letter-spacing: 0.3px; */
+    font-size: 1.2em;
+    font-weight: 200;
+    /* width: 40%; */
+}
+.sec-2>p:nth-child(3){
+    position: absolute;
+    width: 30%;
+    top: 4em;
+    right: 1.3em;
+    text-align: right;
+    /* margin: 2em; */
+    /* letter-spacing: 0.3px; */
+    font-size: 1.2em;
+    font-weight: 200;
+    /* width: 40%; */
 }

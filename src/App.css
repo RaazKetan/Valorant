@@ -11,3 +11,26 @@
   font-family: 'Kantara';
   src: url('./Assets/fonts/KantataAksara.ttf') format('truetype');
 }
+.section-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+button{
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #ff4654;
+    color: white;
+    border: none;
+    height: 3em;
+    width: 10%;
+    border-radius: 50px;
+    cursor: pointer;
+   transition:all 0.3s ease-in-out;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: #ff2e3d;
+}

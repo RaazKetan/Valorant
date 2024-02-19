@@ -26,7 +26,7 @@ const [agents, setAgents] = useState([]);
    <React.Fragment>
       <Navbar />
       <Card/>
-      <section>
+      <section className='section-btn'>
         <button onClick={fetchAgentDetail}>Fetch Agents</button>
         </section>
       <AgentList agents = {agents}/>
