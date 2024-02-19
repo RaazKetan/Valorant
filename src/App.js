@@ -1,11 +1,19 @@
 import React, {useState} from 'react';
-import Navbar from './components/Navbar';
-import Card from './components/Card';
+import Navbar from './components/Navbar/Navbar';
+import Card from './components/Card/Card';
 import AgentList from './components/AgentList';
+import PopUp from './components/Pop-Up/PopUp';
 import './App.css';
 
 function App() {
 const [agents, setAgents] = useState([]);
+const [showPopUp, setShowPopUp] = useState(false);
+
+const togglePopUp = () => {
+  setShowPopUp(!showPopUp);
+  console.log(showPopUp);
+  fetchAgentDetail();
+}
 
  async function fetchAgentDetail(){
    const response = await fetch('https://valorant-api.com/v1/agents')
@@ -27,7 +35,8 @@ const [agents, setAgents] = useState([]);
       <Navbar />
       <Card/>
       <section className='section-btn'>
-        <button onClick={fetchAgentDetail}>Fetch Agents</button>
+        {/* {showPopUp && <PopUp />} */}
+        <button onClick={togglePopUp}>Fetch Agents</button>
         </section>
       <AgentList agents = {agents}/>
    </React.Fragment>
