@@ -10,7 +10,7 @@ const [agents, setAgents] = useState([]);
  async function fetchAgentDetail(){
    const response = await fetch('https://valorant-api.com/v1/agents')
       const data = await response.json(); 
-      console.log(data.data[0].role.displayName); 
+      console.log(data.data[0]); 
       const transformedAgents = data.data.map(agent => {
         return {
           uuid: agent.uuid,

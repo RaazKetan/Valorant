@@ -6,6 +6,7 @@ const AgentList = (props) => {
     return(
         <ul>
             {props.agents.map((agent) => (
+                
                 <Agent
                     key={agent.uuid}
                     name={agent.name}
