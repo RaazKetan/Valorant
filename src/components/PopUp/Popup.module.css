@@ -1,0 +1,18 @@
+.popup{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+.x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}

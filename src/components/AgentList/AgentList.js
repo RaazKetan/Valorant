@@ -1,10 +1,10 @@
 import React from "react";
-import Agent from "./Agent";
+import Agent from "../Agent/Agent";
 
 const AgentList = (props) => {
     // console.log(props.agents[0])
     return(
-        <ul>
+        <ul className>
             {props.agents.map((agent) => (
                 
                 <Agent

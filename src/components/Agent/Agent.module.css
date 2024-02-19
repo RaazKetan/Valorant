@@ -1,0 +1,27 @@
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    padding: 1em;
+}
+.list>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+ font-size: 3em;
+ color: #333;
+ font-weight: 600;
+}
+.desc{
+    font-size: 1em;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+}
