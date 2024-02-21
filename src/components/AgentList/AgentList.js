@@ -4,7 +4,7 @@ import Agent from "../Agent/Agent";
 const AgentList = (props) => {
     // console.log(props.agents[0])
     return(
-        <ul className>
+        <ul >
             {props.agents.map((agent) => (
                 
                 <Agent
