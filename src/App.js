@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/Card/Card";
 import PopUp from "./components/PopUp/PopUp";
+import AddAgent from "./components/AddAgent";
 import "./App.css";
 
 function App() {
@@ -49,10 +50,23 @@ function App() {
       setSearch(e.target.value);
     };
 
+   async function AddAgentHandler(agent){
+     const response = await fetch('https://valoagent-default-rtdb.firebaseio.com/agents.json',{
+        method:'POST',
+        body:JSON.stringify(agent),
+        headers:{
+          'Content-Type':'application/json'
+        }
+      });
+      const data = await response.json();
+      console.log(data);
+    }
+
     return (
       <React.Fragment>
         <Navbar />
         <Card />
+        <AddAgent onAddAgent = {AddAgentHandler} />
         <section className="section-btn">
           {valid && showPopUp && <PopUp agents={agents} closePopUp={closePopUp} />}
           <input
